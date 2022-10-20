@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 import random
 
 """this program prints the polority of a random number
