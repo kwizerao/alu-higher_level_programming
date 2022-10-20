@@ -1,0 +1,6 @@
+#!/bin/bash
+for file in /home/alu-higher_level_programming/python-hello_world/*
+do
+    echo '#!/bin/bash' >> ${file}
+done
+#!/bin/bash
