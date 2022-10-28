@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-from sys import argv
+from calculator_1 import add, sub, mul, div
+a = 10
+b = 5
 if __name__ == "__main__":
-    if len(argv) == 1:
-        print("0 arguments.")
-    elif len(argv) == 2:
-        print("1 argument:")
-        print("1: {}".format(argv[1]))
-    else:
-        print("{} arguments:".format(len(argv) - 1))
-        for i in range(1, len(argv)):
-            print("{}: {}".format(i, argv[i]))
+    print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
+    print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
+    print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
+    print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
