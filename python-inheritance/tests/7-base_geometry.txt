@@ -1,5 +1,4 @@
 The ``7-base_geometry`` module
-
 ==============================
 
 
@@ -238,6 +237,5 @@ Passing None to method
     
     Traceback (most recent call last):
     
-              ...
-	      
+              
     TypeError: age must be an integer
