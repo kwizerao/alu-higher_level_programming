@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# class Student that defines a student by: (based on 9-student.py)
+# class Student that defines a student by: (based on 10-student.py)
 #   - Public instance attributes:
 #       - first_name
 #       - last_name
@@ -12,6 +12,11 @@
 #           - If attrs is a list of strings, only attribute names,
 #               contained in this list must be retrieved
 #           - Otherwise, all attributes must be retrieved
+#   - Public method def reload_from_json(self, json):
+#       that replaces all attributes of the Student instance:
+#           - You can assume json will always be a dictionary
+#           - A dictionary key will be the public attribute name
+#           - A dictionary value will be the value of the public attribute
 """
     class 'Student'
 """
@@ -42,3 +47,11 @@ class Student:
             if type(att) is not str:
                 return self.__dict__
         return {x: self.__dict__[x] for x in self.__dict__ if x in attrs}
+
+    def reload_from_json(self, json):
+        """
+            replace all attributes of Student instance
+        """
+
+        for key, value in json.items():
+            self.__dict__[key] = value

@@ -11,7 +11,7 @@
 #       of a Student instance (same as 8-class_to_json.py)
 """
     class 'Student'
- """
+"""
 
 
 class Student:
@@ -24,10 +24,10 @@ class Student:
             init a new Student
         """
 
-        self.first_name = first_name                    
+        self.first_name = first_name
         self.last_name = last_name
         self.age = age
-    
+
     def to_json(self):
         """
             retrieve dictionary representation of a Student instance
