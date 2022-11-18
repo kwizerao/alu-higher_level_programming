@@ -24,4 +24,4 @@ def pascal_triangle(n):
             for j in range(i - 1):
                 p_t[i].append(p_t[i - 1][j] + p_t[i - 1][j + 1])
             p_t[i].append(1)
-    return 
+    return p_t
