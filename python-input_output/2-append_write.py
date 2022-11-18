@@ -4,5 +4,5 @@
 
 def append_write(filename="", text=""):
     """How far now"""
-       with open(filename, 'a+') as f:
-       return f.write(text)
+    with open(filename, 'a+') as f:
+        return f.write(text)
