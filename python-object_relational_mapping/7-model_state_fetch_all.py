@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Python script that lists all the sttates objects 
+    Python script that lists all the sttates objects
     from the database hbtn_0e_6_usa
 """
 
