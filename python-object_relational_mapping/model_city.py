@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''Defining a database class with sql-alchemy'''
+'''Defining a database 
+   class with sql-alchemy
+'''
 
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
